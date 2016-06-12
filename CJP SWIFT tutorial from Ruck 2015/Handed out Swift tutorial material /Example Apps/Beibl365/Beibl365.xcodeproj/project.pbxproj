@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F11C60A1AD0481E00239038 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F11C6091AD0481E00239038 /* Lesson.swift */; };
+		1F11C60E1AD07F2D00239038 /* ShowReadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F11C60D1AD07F2D00239038 /* ShowReadingVC.swift */; };
+		1F11C6101AD316C900239038 /* DBAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F11C60F1AD316C900239038 /* DBAccess.swift */; };
+		1F26D8811AD96D8C00A3965F /* DBObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F26D8801AD96D8C00A3965F /* DBObjC.m */; };
+		1F26D8831AD96DC700A3965F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F26D8821AD96DC700A3965F /* libsqlite3.dylib */; };
+		1F26D8851AD979CE00A3965F /* bibleDB.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F26D8841AD979CE00A3965F /* bibleDB.sqlite3 */; };
+		1F6333591ACFC9D000F7FA28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6333581ACFC9D000F7FA28 /* AppDelegate.swift */; };
+		1F6333601ACFC9D000F7FA28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F63335E1ACFC9D000F7FA28 /* Main.storyboard */; };
+		1F6333621ACFC9D000F7FA28 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F6333611ACFC9D000F7FA28 /* Images.xcassets */; };
+		1F6333651ACFC9D000F7FA28 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F6333631ACFC9D000F7FA28 /* LaunchScreen.xib */; };
+		1F63337B1ACFF4E000F7FA28 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63337A1ACFF4E000F7FA28 /* MainVC.swift */; };
+		1F63337D1ACFF99900F7FA28 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63337C1ACFF99900F7FA28 /* HeaderCell.swift */; };
+		1F63337F1AD028F100F7FA28 /* PassageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F63337E1AD028F100F7FA28 /* PassageCell.swift */; };
+		1FF2DB921AE591E20092191E /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF2DB911AE591E20092191E /* InfoVC.swift */; };
+		1FF2DB941AE594700092191E /* info.html in Resources */ = {isa = PBXBuildFile; fileRef = 1FF2DB931AE594700092191E /* info.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F11C6091AD0481E00239038 /* Lesson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
+		1F11C60D1AD07F2D00239038 /* ShowReadingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowReadingVC.swift; sourceTree = "<group>"; };
+		1F11C60F1AD316C900239038 /* DBAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBAccess.swift; sourceTree = "<group>"; };
+		1F26D87E1AD96D8B00A3965F /* Bible365-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bible365-Bridging-Header.h"; sourceTree = "<group>"; };
+		1F26D87F1AD96D8C00A3965F /* DBObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBObjC.h; sourceTree = "<group>"; };
+		1F26D8801AD96D8C00A3965F /* DBObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBObjC.m; sourceTree = "<group>"; };
+		1F26D8821AD96DC700A3965F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		1F26D8841AD979CE00A3965F /* bibleDB.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bibleDB.sqlite3; sourceTree = "<group>"; };
+		1F6333531ACFC9D000F7FA28 /* Beibl365.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beibl365.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6333571ACFC9D000F7FA28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F6333581ACFC9D000F7FA28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F63335F1ACFC9D000F7FA28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F6333611ACFC9D000F7FA28 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1F6333641ACFC9D000F7FA28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1F63336F1ACFC9D000F7FA28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F6333701ACFC9D000F7FA28 /* Bible365Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bible365Tests.swift; sourceTree = "<group>"; };
+		1F63337A1ACFF4E000F7FA28 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		1F63337C1ACFF99900F7FA28 /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		1F63337E1AD028F100F7FA28 /* PassageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassageCell.swift; sourceTree = "<group>"; };
+		1FF2DB911AE591E20092191E /* InfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
+		1FF2DB931AE594700092191E /* info.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = info.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F6333501ACFC9D000F7FA28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F26D8831AD96DC700A3965F /* libsqlite3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F63334A1ACFC9D000F7FA28 = {
+			isa = PBXGroup;
+			children = (
+				1F26D8821AD96DC700A3965F /* libsqlite3.dylib */,
+				1F6333551ACFC9D000F7FA28 /* Beibl365 */,
+				1F63336D1ACFC9D000F7FA28 /* Bible365Tests */,
+				1F6333541ACFC9D000F7FA28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F6333541ACFC9D000F7FA28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F6333531ACFC9D000F7FA28 /* Beibl365.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F6333551ACFC9D000F7FA28 /* Beibl365 */ = {
+			isa = PBXGroup;
+			children = (
+				1F6333581ACFC9D000F7FA28 /* AppDelegate.swift */,
+				1F63337A1ACFF4E000F7FA28 /* MainVC.swift */,
+				1F11C60D1AD07F2D00239038 /* ShowReadingVC.swift */,
+				1FF2DB911AE591E20092191E /* InfoVC.swift */,
+				1F11C60F1AD316C900239038 /* DBAccess.swift */,
+				1F26D87F1AD96D8C00A3965F /* DBObjC.h */,
+				1F26D8801AD96D8C00A3965F /* DBObjC.m */,
+				1F11C6091AD0481E00239038 /* Lesson.swift */,
+				1F63337C1ACFF99900F7FA28 /* HeaderCell.swift */,
+				1F63337E1AD028F100F7FA28 /* PassageCell.swift */,
+				1F63335E1ACFC9D000F7FA28 /* Main.storyboard */,
+				1F6333611ACFC9D000F7FA28 /* Images.xcassets */,
+				1F6333631ACFC9D000F7FA28 /* LaunchScreen.xib */,
+				1F6333561ACFC9D000F7FA28 /* Supporting Files */,
+				1F26D87E1AD96D8B00A3965F /* Bible365-Bridging-Header.h */,
+			);
+			name = Beibl365;
+			path = Bible365;
+			sourceTree = "<group>";
+		};
+		1F6333561ACFC9D000F7FA28 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FF2DB931AE594700092191E /* info.html */,
+				1F26D8841AD979CE00A3965F /* bibleDB.sqlite3 */,
+				1F6333571ACFC9D000F7FA28 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F63336D1ACFC9D000F7FA28 /* Bible365Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1F6333701ACFC9D000F7FA28 /* Bible365Tests.swift */,
+				1F63336E1ACFC9D000F7FA28 /* Supporting Files */,
+			);
+			path = Bible365Tests;
+			sourceTree = "<group>";
+		};
+		1F63336E1ACFC9D000F7FA28 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F63336F1ACFC9D000F7FA28 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F6333521ACFC9D000F7FA28 /* Beibl365 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F6333741ACFC9D000F7FA28 /* Build configuration list for PBXNativeTarget "Beibl365" */;
+			buildPhases = (
+				1F63334F1ACFC9D000F7FA28 /* Sources */,
+				1F6333501ACFC9D000F7FA28 /* Frameworks */,
+				1F6333511ACFC9D000F7FA28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Beibl365;
+			productName = Bible365;
+			productReference = 1F6333531ACFC9D000F7FA28 /* Beibl365.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F63334B1ACFC9D000F7FA28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Chris Price";
+				TargetAttributes = {
+					1F6333521ACFC9D000F7FA28 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = Y48AZMY2V2;
+					};
+				};
+			};
+			buildConfigurationList = 1F63334E1ACFC9D000F7FA28 /* Build configuration list for PBXProject "Beibl365" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F63334A1ACFC9D000F7FA28;
+			productRefGroup = 1F6333541ACFC9D000F7FA28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F6333521ACFC9D000F7FA28 /* Beibl365 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F6333511ACFC9D000F7FA28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F6333601ACFC9D000F7FA28 /* Main.storyboard in Resources */,
+				1F6333651ACFC9D000F7FA28 /* LaunchScreen.xib in Resources */,
+				1F26D8851AD979CE00A3965F /* bibleDB.sqlite3 in Resources */,
+				1FF2DB941AE594700092191E /* info.html in Resources */,
+				1F6333621ACFC9D000F7FA28 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F63334F1ACFC9D000F7FA28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F63337D1ACFF99900F7FA28 /* HeaderCell.swift in Sources */,
+				1F63337F1AD028F100F7FA28 /* PassageCell.swift in Sources */,
+				1F11C60A1AD0481E00239038 /* Lesson.swift in Sources */,
+				1F63337B1ACFF4E000F7FA28 /* MainVC.swift in Sources */,
+				1FF2DB921AE591E20092191E /* InfoVC.swift in Sources */,
+				1F11C60E1AD07F2D00239038 /* ShowReadingVC.swift in Sources */,
+				1F11C6101AD316C900239038 /* DBAccess.swift in Sources */,
+				1F6333591ACFC9D000F7FA28 /* AppDelegate.swift in Sources */,
+				1F26D8811AD96D8C00A3965F /* DBObjC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1F63335E1ACFC9D000F7FA28 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F63335F1ACFC9D000F7FA28 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F6333631ACFC9D000F7FA28 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F6333641ACFC9D000F7FA28 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F6333721ACFC9D000F7FA28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Chris Price (Y48AZMY2V2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Chris Price (Y48AZMY2V2)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "d6176f4c-e056-4578-b7c3-bd1440db1e95";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		1F6333731ACFC9D000F7FA28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Chris Price (Y48AZMY2V2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Chris Price (Y48AZMY2V2)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "d6176f4c-e056-4578-b7c3-bd1440db1e95";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F6333751ACFC9D000F7FA28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chris Price (ZXHDHVHN9W)";
+				INFOPLIST_FILE = Bible365/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bible365/Bible365-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F6333761ACFC9D000F7FA28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Chris Price (ZXHDHVHN9W)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chris Price (ZXHDHVHN9W)";
+				INFOPLIST_FILE = Bible365/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bible365/Bible365-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F63334E1ACFC9D000F7FA28 /* Build configuration list for PBXProject "Beibl365" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F6333721ACFC9D000F7FA28 /* Debug */,
+				1F6333731ACFC9D000F7FA28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F6333741ACFC9D000F7FA28 /* Build configuration list for PBXNativeTarget "Beibl365" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F6333751ACFC9D000F7FA28 /* Debug */,
+				1F6333761ACFC9D000F7FA28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F63334B1ACFC9D000F7FA28 /* Project object */;
+}

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RMx-3f-FxP">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Master-->
+        <scene sceneID="pY4-Hu-kfo">
+            <objects>
+                <navigationController title="Master" id="RMx-3f-FxP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Pmd-2v-anx">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7bK-jq-Zjz" kind="relationship" relationship="rootViewController" id="tsl-Nk-0bq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8fS-aE-onr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="-630"/>
+        </scene>
+        <!--Master-->
+        <scene sceneID="smW-Zh-WAh">
+            <objects>
+                <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="MainVC" customModule="Beibl365" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="r7i-6Z-zg0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HeaderCell" id="WCw-Qf-5nD" customClass="HeaderCell" customModule="Beibl365" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="86" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WCw-Qf-5nD" id="37f-cq-3Eg">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hen Destament" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyD-iv-RFc">
+                                            <rect key="frame" x="28" y="3" width="544" height="36"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="tyD-iv-RFc" firstAttribute="leading" secondItem="37f-cq-3Eg" secondAttribute="leadingMargin" constant="20" id="O2D-DK-oWD"/>
+                                        <constraint firstAttribute="centerY" secondItem="tyD-iv-RFc" secondAttribute="centerY" id="YL8-2M-Z6a"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="tyD-iv-RFc" secondAttribute="trailing" constant="20" id="p6v-27-Fcc"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="headerText" destination="tyD-iv-RFc" id="1i3-GI-HRl"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PassageCell" rowHeight="60" id="daJ-Qv-9nv" customClass="PassageCell" customModule="Beibl365" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="130" width="600" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="daJ-Qv-9nv" id="yZu-OM-nre">
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="59"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Matthew 1:1-23" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fbm-QN-8db">
+                                            <rect key="frame" x="76" y="11" width="463" height="40"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="centerY" secondItem="Fbm-QN-8db" secondAttribute="centerY" id="6lN-n9-j9B"/>
+                                        <constraint firstItem="Fbm-QN-8db" firstAttribute="trailing" secondItem="yZu-OM-nre" secondAttribute="trailingMargin" constant="47" id="NCK-PR-Yza"/>
+                                        <constraint firstItem="Fbm-QN-8db" firstAttribute="leading" secondItem="yZu-OM-nre" secondAttribute="leadingMargin" constant="30" id="bhX-Bt-lgR"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="passage" destination="Fbm-QN-8db" id="sD5-Ou-rbs"/>
+                                    <segue destination="hIL-uy-cu7" kind="show" identifier="showReading" id="JJm-Vh-sNm"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="ControlCell" rowHeight="80" id="bb8-bD-mzX">
+                                <rect key="frame" x="0.0" y="190" width="600" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bb8-bD-mzX" id="4h4-Fy-gtO">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="79"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Tf-rX-Cff">
+                                            <rect key="frame" x="180" y="20" width="240" height="41"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="B3F-au-Xj8"/>
+                                                <constraint firstAttribute="height" constant="80" id="S5w-za-jfb"/>
+                                                <constraint firstAttribute="width" constant="240" id="fwa-TJ-HPP"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <state key="normal" title="Darlleniadau Newydd">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="B3F-au-Xj8"/>
+                                                    <exclude reference="S5w-za-jfb"/>
+                                                    <exclude reference="fwa-TJ-HPP"/>
+                                                </mask>
+                                            </variation>
+                                            <connections>
+                                                <action selector="doNextUnread:" destination="7bK-jq-Zjz" eventType="touchUpInside" id="osj-Bt-VmU"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kkY-XA-BRE">
+                                            <rect key="frame" x="0.0" y="20" width="52" height="41"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="135" id="3wj-xR-CRQ"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="800" constant="80" id="Fuz-Td-Q8b"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="HYM-Mf-bun"/>
+                                                <constraint firstAttribute="width" constant="78" id="nKq-cK-nVP"/>
+                                                <constraint firstAttribute="height" constant="80" id="ob5-7s-vbO"/>
+                                            </constraints>
+                                            <state key="normal" image="765-arrow-left">
+                                                <attributedString key="attributedTitle"/>
+                                            </state>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="3wj-xR-CRQ"/>
+                                                    <exclude reference="HYM-Mf-bun"/>
+                                                    <exclude reference="nKq-cK-nVP"/>
+                                                    <exclude reference="ob5-7s-vbO"/>
+                                                </mask>
+                                            </variation>
+                                            <connections>
+                                                <action selector="doLast:" destination="7bK-jq-Zjz" eventType="touchUpInside" id="aYJ-b0-9HJ"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e3s-Kk-EwR">
+                                            <rect key="frame" x="465" y="20" width="52" height="41"/>
+                                            <state key="normal" image="766-arrow-right">
+                                                <attributedString key="attributedTitle"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="doNext:" destination="7bK-jq-Zjz" eventType="touchUpInside" id="ZGy-4F-1xO"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="centerX" secondItem="6Tf-rX-Cff" secondAttribute="centerX" id="1ls-Zx-mHW"/>
+                                        <constraint firstItem="kkY-XA-BRE" firstAttribute="centerY" secondItem="6Tf-rX-Cff" secondAttribute="centerY" id="8nC-fT-XuO"/>
+                                        <constraint firstItem="kkY-XA-BRE" firstAttribute="height" secondItem="e3s-Kk-EwR" secondAttribute="height" id="D9T-QX-f8I"/>
+                                        <constraint firstItem="kkY-XA-BRE" firstAttribute="height" secondItem="6Tf-rX-Cff" secondAttribute="height" id="Vg9-du-vTE"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="6Tf-rX-Cff" secondAttribute="bottom" priority="700" id="bLW-FB-7rt"/>
+                                        <constraint firstAttribute="centerY" secondItem="6Tf-rX-Cff" secondAttribute="centerY" id="beO-mC-lE1"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="e3s-Kk-EwR" secondAttribute="trailing" id="fTk-h6-zZs"/>
+                                        <constraint firstItem="kkY-XA-BRE" firstAttribute="centerY" secondItem="e3s-Kk-EwR" secondAttribute="centerY" id="k2Z-hk-heP"/>
+                                        <constraint firstItem="kkY-XA-BRE" firstAttribute="width" secondItem="e3s-Kk-EwR" secondAttribute="width" priority="900" id="mYS-FB-S99"/>
+                                        <constraint firstItem="6Tf-rX-Cff" firstAttribute="top" secondItem="4h4-Fy-gtO" secondAttribute="topMargin" priority="700" id="oRe-61-FYX"/>
+                                        <constraint firstItem="kkY-XA-BRE" firstAttribute="leading" secondItem="4h4-Fy-gtO" secondAttribute="leadingMargin" id="wk4-Io-Fgc"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableViewCell>
+                            <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LineCell" rowHeight="10" id="gm8-b7-hbU">
+                                <rect key="frame" x="0.0" y="270" width="600" height="10"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gm8-b7-hbU" id="ttC-3F-6dW">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="9"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BlankCell" textLabel="hsf-F8-KgC" style="IBUITableViewCellStyleDefault" id="2ET-3W-5EZ">
+                                <rect key="frame" x="0.0" y="280" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2ET-3W-5EZ" id="WrA-6D-uIl">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hsf-F8-KgC">
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="7bK-jq-Zjz" id="Gho-Na-rnu"/>
+                            <outlet property="delegate" destination="7bK-jq-Zjz" id="RA6-mI-bju"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Beibl365 - Dydd 1" id="Zdf-7t-Un8">
+                        <barButtonItem key="rightBarButtonItem" image="724-info" id="y0s-oe-wiR">
+                            <connections>
+                                <segue destination="X6N-3W-prM" kind="show" id="lbF-w0-Hjt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="709" y="-647"/>
+        </scene>
+        <!--InfoVC-->
+        <scene sceneID="64I-jt-v7U">
+            <objects>
+                <viewController id="X6N-3W-prM" customClass="InfoVC" customModule="Beibl365" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PSh-x6-SrM"/>
+                        <viewControllerLayoutGuide type="bottom" id="xp5-s6-gLn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BWY-Y0-f4d">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cXQ-Od-jtZ">
+                                <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cXQ-Od-jtZ" firstAttribute="top" secondItem="PSh-x6-SrM" secondAttribute="bottom" id="1dg-nB-yNZ"/>
+                            <constraint firstItem="cXQ-Od-jtZ" firstAttribute="leading" secondItem="BWY-Y0-f4d" secondAttribute="leadingMargin" priority="700" constant="-16" id="Gm6-aq-XIc"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="cXQ-Od-jtZ" secondAttribute="bottom" constant="-64" id="WxQ-oq-NvM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cXQ-Od-jtZ" secondAttribute="trailing" priority="700" constant="-16" id="nN8-Xa-xhp"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="infoView" destination="cXQ-Od-jtZ" id="cBe-3A-hrC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sJQ-9b-XGA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1634" y="-1465"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="ILO-Yb-Yuz">
+            <objects>
+                <viewController title="Detail" id="hIL-uy-cu7" customClass="ShowReadingVC" customModule="Beibl365" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YIy-q9-hxS"/>
+                        <viewControllerLayoutGuide type="bottom" id="hrl-2t-fJa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WQH-ks-eEE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" misplaced="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kvg-SE-Smz">
+                                <rect key="frame" x="-2" y="64" width="605" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Kvg-SE-Smz" firstAttribute="leading" secondItem="WQH-ks-eEE" secondAttribute="leadingMargin" id="9m1-rx-g28"/>
+                            <constraint firstItem="Kvg-SE-Smz" firstAttribute="top" secondItem="YIy-q9-hxS" secondAttribute="bottom" id="cyi-Vz-cTo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Kvg-SE-Smz" secondAttribute="trailing" id="gCa-FH-K9B"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Kvg-SE-Smz" secondAttribute="bottom" id="m5u-Ti-Bgz"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Reading" id="Drb-Fh-e2e"/>
+                    <connections>
+                        <outlet property="bibleView" destination="Kvg-SE-Smz" id="Lo3-Xp-oQW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V4h-nY-Ksd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1613" y="-635"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="724-info" width="28" height="28"/>
+        <image name="765-arrow-left" width="14" height="28"/>
+        <image name="766-arrow-right" width="14" height="28"/>
+    </resources>
+</document>
