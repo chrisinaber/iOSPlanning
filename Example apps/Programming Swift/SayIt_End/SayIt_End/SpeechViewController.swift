@@ -32,6 +32,7 @@ class SpeechViewController: UIViewController, UITextFieldDelegate {
         
         super.viewDidLoad()
         statusLabel.text = ""
+        self.speechDelegate.speechController = self
     }
     
     override func didReceiveMemoryWarning() {

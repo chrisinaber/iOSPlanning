@@ -1,0 +1,2 @@
+// Extract 1
+let speechSettings = SpeechSettings()
